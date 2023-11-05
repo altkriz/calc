@@ -11,31 +11,32 @@ A web-based scientific calculator developed using HTML, CSS, and JavaScript.
 - [Getting Started](#getting-started)
 - [License](#license)
 
-## Demo
+# Demo
 
 You can try out the calculator by visiting the [live demo](insert-live-demo-link-here).
 
-## Features
+# Features
 
 - Basic arithmetic operations (addition, subtraction, multiplication, division).
 - Advanced functions for scientific calculations.
 - User-friendly and responsive design.
 
-## Screenshots
+# Screenshots
 
-![Screenshot 1](insert-screenshot-1-link-here)
+![Screenshot 1](img/calc1.png)
 
-![Screenshot 2](insert-screenshot-2-link-here)
+![Screenshot 2](img/calc2.png)
 
-## Author
+![Screenshot 2](img/calc3.png)
+# Author
 
-- [Your Name](insert-author-profile-link-here)
+- [Kashif Raza](https://github/altkriz)
 
-## Getting Started
+# Getting Started
 
 To run this calculator locally, follow these steps:
 
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/scientific-calculator.git
+   git clone https://github.com/altkriz/calc.git
