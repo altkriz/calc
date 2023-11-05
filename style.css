@@ -1,0 +1,71 @@
+
+  /* Default theme (Light) */
+  :root {
+    --bg-color: #f0f0f0;
+    --btn-bg: #4a90e2;
+    --btn-hover: #3574b9;
+    --text-color: #fff;
+}
+
+/* Light theme background */
+.calculator {
+    width: 70%; /* Set the calculator's width to 100% to make it responsive */
+    max-width: 800px; /* Add a maximum width for larger screens */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+#display {
+    width: 100%; /* Set the result window's width to 100% */
+}
+/* Dark theme background */
+.dark-theme .calculator {
+    background: url('https://w0.peakpx.com/wallpaper/925/686/HD-wallpaper-whatsapp-background-patterns-texture.jpg'); /* Replace with your dark theme background image */
+}
+
+/* Custom theme background */
+.custom-theme .calculator {
+    background: url('https://w0.peakpx.com/wallpaper/744/229/HD-wallpaper-whatsapp-cartoon-halloween-black-dark-simple-rock-skull.jpg'); /* Replace with your custom theme background image */
+}
+        /* Add transition for button press and release animations */
+.btn {
+    width: 100%;
+    height: 70px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+}
+
+/* Add button press animation */
+.btn:active {
+    transform: scale(0.70);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .calculator {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .btn {
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+.mt-4{
+background-color:white;
+}
