@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+  <!-- 
+    Author: Kashif Raza
+    Code Source: Created by Kashif Raza.
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Kriz Calc </title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" value="0" class="text-right text-4xl p-4 border border-gray-300 mb-4 rounded-lg">
+        <div class="grid grid-cols-5 gap-4">
+            <!-- Buttons for basic operations -->
+            <button class="btn col-span-2" onclick="clearDisplay()">C</button>
+            <button class="btn" onclick="appendToDisplay('7')">7</button>
+            <button class="btn" onclick="appendToDisplay('8')">8</button>
+            <button class="btn" onclick="appendToDisplay('9')">9</button>
+            <button class="btn" onclick="appendToDisplay('+')">+</button>
+            <button class="btn" onclick="appendToDisplay('-')">-</button>
+            <button class="btn" onclick="appendToDisplay('4')">4</button>
+            <button class="btn" onclick="appendToDisplay('5')">5</button>
+            <button class="btn" onclick="appendToDisplay('6')">6</button>
+            <button class="btn" onclick="appendToDisplay('*')">*</button>
+            <button class="btn" onclick="appendToDisplay('/')">/</button>
+            <button class="btn" onclick="appendToDisplay('1')">1</button>
+            <button class="btn" onclick="appendToDisplay('2')">2</button>
+            <button class="btn" onclick="appendToDisplay('3')">3</button>
+            <button class="btn" onclick="appendToDisplay('(')">(</button>
+            <button class="btn" onclick="appendToDisplay(')')">)</button>
+            <button class="btn" onclick="calculateResult()" style="grid-column: span 2">=</button>
+            <!-- Additional features -->
+            <button class="btn" onclick="appendToDisplay('Math.sqrt(')">√</button>
+            <button class="btn" onclick="appendToDisplay('Math.cbrt(')">³√</button>
+            <button class="btn" onclick="appendToDisplay('Math.sin(')">sin</button>
+            <button class="btn" onclick="appendToDisplay('Math.cos(')">cos</button>
+            <button class="btn" onclick="appendToDisplay('Math.tan(')">tan</button>
+            <button class="btn" onclick="appendToDisplay('Math.log10(')">log</button>
+            <button class="btn" onclick="appendToDisplay('Math.log(')">ln</button>
+            <button class="btn" onclick="appendToDisplay('Math.pow(')">x^y</button>
+            <button class="btn" onclick="appendToDisplay('Math.PI')">π</button>
+            <button class="btn" onclick="appendToDisplay('Math.E')">e</button>
+            <button class="btn" onclick="toggleDegreeRadian()">Deg/Rad</button>
+            <button class="btn" onclick="toggleNumeralSystem()">Bin/Hex</button>
+            <button class="btn" onclick="openMatrixInput()">Matrix</button>
+        </div>
+        <!-- Theme selection dropdown -->
+        <div class="mt-4">
+            <label for="themeSelect" class="text-lg font-semibold">Select Theme:</label>
+            <select id="themeSelect" class="mt-2 p-2">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+    </div>
+      <script src="script.js"></script>
+</body>
+</html>
