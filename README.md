@@ -13,7 +13,7 @@ A web-based scientific calculator developed using HTML, CSS, and JavaScript.
 
 # Demo
 
-You can try out the calculator by visiting the [live demo](insert-live-demo-link-here).
+You can try out the calculator by visiting the [live demo](https://altkriz.github.io/calc).
 
 # Features
 
